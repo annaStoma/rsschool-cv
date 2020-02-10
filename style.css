@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
+
+.title {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.cv {
+    max-width: 1024px;
+}
+
+a {
+    color: rgb(192, 125, 228);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(224, 154, 62);
+}
+
+.avatar {
+    width: 250px;
+    float: right;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    transition: 2s;
+    transform: rotate(360deg);
+}
+
+li {
+    margin-top: 25px;
+}
+
+li:hover {
+    transition: 0.5s;
+    color: rgb(94, 10, 174);
+    cursor: default
+}
