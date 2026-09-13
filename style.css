@@ -3,3 +3,184 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    background-color: #f4f5f7;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: #23272f;
+    line-height: 1.5;
+}
+
+.page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2f3a56;
+}
+
+.avatar {
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.header-info {
+    flex: 1 1 240px;
+}
+
+.header-info h1 {
+    font-size: 28px;
+    color: #2f3a56;
+}
+
+.header-role {
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.header-location {
+    margin-top: 4px;
+    color: #565f73;
+    font-size: 14px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #2f3a56;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 24px 0;
+    border-bottom: 1px solid #e1e4ea;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: #2f3a56;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 6px;
+}
+
+.skills-list,
+.contacts-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contacts-list a {
+    color: #2f3a56;
+}
+
+.code-block {
+    background-color: #1e1e2e;
+    color: #e4e6f0;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14px;
+}
+
+.job,
+.edu {
+    margin-bottom: 20px;
+}
+
+.job:last-child,
+.edu:last-child {
+    margin-bottom: 0;
+}
+
+.job h3,
+.edu h3 {
+    font-size: 16px;
+    color: #23272f;
+}
+
+.job-dates {
+    color: #565f73;
+    font-size: 14px;
+    font-style: italic;
+    margin: 2px 0 8px;
+}
+
+.footer {
+    padding-top: 20px;
+    border-top: 3px solid #2f3a56;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.footer-list a {
+    color: #2f3a56;
+}
+
+.footer-list img {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+}

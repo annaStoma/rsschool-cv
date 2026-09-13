@@ -7,6 +7,141 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page">
+        <header class="header">
+            <img class="avatar" src="assets/avatar.svg" alt="Аватар Hanna Stoma" width="120" height="120">
+            <div class="header-info">
+                <h1>Hanna Stoma</h1>
+                <p class="header-role">Frontend-разработчик &middot; Angular &middot; React</p>
+                <p class="header-location">Грузия &middot; удалённо / гибрид &middot; готова к релокации</p>
+            </div>
+            <nav class="nav" aria-label="Разделы страницы">
+                <ul class="nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#code">Код</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#languages">Языки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main class="main">
+            <section id="about" class="section">
+                <h2>Обо мне</h2>
+                <p>
+                    Frontend-разработчик с более чем 6-летним опытом коммерческой разработки масштабируемых,
+                    высокопроизводительных веб-приложений на Angular (v8&ndash;17), React, TypeScript,
+                    JavaScript (ES6+), RxJS и NgRx. Уверенные навыки в архитектуре SPA, создании переиспользуемых
+                    библиотек UI-компонентов, интеграции с REST API, адаптивной и кроссбраузерной вёрстке,
+                    unit-тестировании. Опыт работы в Agile/Scrum-командах, проведения code review, менторства
+                    и онбординга junior-разработчиков.
+                </p>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Навыки</h2>
+                <ul class="skills-list">
+                    <li><strong>Фреймворки и библиотеки:</strong> Angular, React, React Native, RxJS, NgRx, React Hooks, Angular Material, PrimeNG, Nebular, Bootstrap</li>
+                    <li><strong>Языки и разметка:</strong> TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS/SASS</li>
+                    <li><strong>Архитектура и паттерны:</strong> SPA, компонентная архитектура, реактивное программирование, lazy loading, оптимизация производительности</li>
+                    <li><strong>API и данные:</strong> REST API, JSON, OAuth 2.0 (PKCE), WebSockets (базово)</li>
+                    <li><strong>Тестирование:</strong> Jasmine, Karma, Jest</li>
+                    <li><strong>Инструменты:</strong> Git, GitLab, GitLab CI/CD, Webpack, Vite, Jira, Figma</li>
+                    <li><strong>UI/UX:</strong> адаптивная вёрстка, кроссбраузерность, pixel-perfect вёрстка, основы accessibility</li>
+                    <li><strong>Soft skills:</strong> Agile, Scrum, code review, менторство, техническое интервьюирование</li>
+                </ul>
+            </section>
+
+            <section id="code" class="section">
+                <h2>Пример кода</h2>
+                <p>Кастомный RxJS-пайп для debounce-поиска с отменой предыдущего запроса:</p>
+                <pre class="code-block"><code>this.searchControl.valueChanges.pipe(
+    debounceTime(300),
+    distinctUntilChanged(),
+    switchMap(query =&gt; this.api.search(query)),
+    takeUntil(this.destroy$)
+).subscribe(results =&gt; {
+    this.results = results;
+});</code></pre>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Опыт работы</h2>
+
+                <article class="job">
+                    <h3>Frontend-разработчик (Angular) &mdash; Retano.ai</h3>
+                    <p class="job-dates">Октябрь 2024 &ndash; настоящее время</p>
+                    <ul>
+                        <li>Разрабатываю и поддерживаю модули корпоративного SaaS-дашборда для ритейла: управление запасами, заказами, прогнозирование спроса, аналитика здоровья категорий.</li>
+                        <li>Создаю переиспользуемые Angular-компоненты и реализую сложные интерфейсы с большим объёмом данных по макетам из Figma.</li>
+                        <li>Интегрирую фронтенд с REST API; управляю состоянием через NgRx и реактивными потоками через RxJS.</li>
+                    </ul>
+                </article>
+
+                <article class="job">
+                    <h3>Frontend-разработчик (Angular / React) &mdash; ИП Дмитрий Семёнов</h3>
+                    <p class="job-dates">Декабрь 2023 &ndash; Сентябрь 2024</p>
+                    <ul>
+                        <li>Разрабатывала функциональность клиентского веб-приложения: UI-компоненты, формы со сложной валидацией, интеграция с бэкендом через REST API.</li>
+                        <li>Реализовывала адаптивные, кроссбраузерные интерфейсы и переиспользуемую компонентную архитектуру.</li>
+                    </ul>
+                </article>
+
+                <article class="job">
+                    <h3>Frontend-разработчик (Angular) &mdash; CleverDev Software</h3>
+                    <p class="job-dates">Май 2020 &ndash; Октябрь 2023</p>
+                    <ul>
+                        <li>Работала над двумя долгосрочными коммерческими проектами (здравоохранение, автоматизация бизнеса) в распределённых Scrum-командах.</li>
+                        <li>Разрабатывала функциональность SPA &laquo;под ключ&raquo;: UI-компоненты, роутинг, управление состоянием, интеграция с REST API, unit-тесты.</li>
+                        <li>Занималась онбордингом и менторством junior-разработчиков, участвовала в технических собеседованиях и code review.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="education" class="section">
+                <h2>Образование</h2>
+                <article class="edu">
+                    <h3>Белорусско-Российский университет</h3>
+                    <p class="job-dates">Могилёв, Беларусь &middot; Сентябрь 2016 &ndash; Июль 2020</p>
+                </article>
+                <article class="edu">
+                    <h3>The Rolling Scopes School &mdash; RS 2020 Q1 (JavaScript)</h3>
+                    <p class="job-dates">Сертификат</p>
+                </article>
+            </section>
+
+            <section id="languages" class="section">
+                <h2>Языки</h2>
+                <ul>
+                    <li>Английский &mdash; Intermediate (B1+)</li>
+                    <li>Русский &mdash; родной</li>
+                </ul>
+            </section>
+
+            <section id="contacts" class="section">
+                <h2>Контакты</h2>
+                <ul class="contacts-list">
+                    <li><a href="https://t.me/hanna_stoma">Telegram: @hanna_stoma</a></li>
+                    <li><a href="mailto:annstoma9@gmail.com">Email: annstoma9@gmail.com</a></li>
+                    <li><a href="https://github.com/annaStoma">GitHub: annaStoma</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <ul class="footer-list">
+                <li><a href="https://github.com/annaStoma">GitHub: annaStoma</a></li>
+                <li>&copy; 2026</li>
+                <li>
+                    <a href="https://rs.school/" aria-label="RS School">
+                        <img src="assets/rs-school-logo.svg" alt="Логотип RS School" width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
