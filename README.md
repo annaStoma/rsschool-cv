@@ -1,3 +1,5 @@
 # rsschool-cv
 
-CV: https://annastoma.github.io/rsschool-cv/cv
+CV (Markdown): https://annastoma.github.io/rsschool-cv/cv
+
+CV (HTML/CSS page): https://annastoma.github.io/rsschool-cv/
