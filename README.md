@@ -1,3 +1,3 @@
 # rsschool-cv
 
-CV: https://annaStoma.github.io/rsschool-cv/cv
+CV: https://annastoma.github.io/rsschool-cv/cv
