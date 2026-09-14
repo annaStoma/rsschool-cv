@@ -3,10 +3,6 @@
 
 # Hanna Stoma
 
-### Angular · React | TypeScript · RxJS · NgRx | 6+ лет опыта
-
-Грузия | Удалённо / Гибрид (Грузия, Польша, ЕС) | Готова к релокации
-
 Telegram: [@hanna_stoma](https://t.me/hanna_stoma) · Email: [annstoma9@gmail.com](mailto:annstoma9@gmail.com) · LinkedIn
 
 ---
